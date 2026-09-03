@@ -3,750 +3,1287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarkari.online — Official Examination & Recruitment Intelligence Directory 2026</title>
-    <meta name="description" content="Real-time statutory government exam notices, admit cards, answer keys, cutoff marks, and merit lists curated by Sarkari.online.">
+    <title>Sarkari.online &bull; Statutory Examination & Recruitment Intelligence Hub 2026</title>
+    <meta name="description" content="Real-time statutory government exam notices, admit cards, answer keys, cutoff marks, and merit lists verified by Sarkari.online.">
     <link rel="canonical" href="https://sarkari-online.github.io/govt-job-alerts-2026/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <meta name="robots" content="index, follow">
     <style>
         :root {
-            --primary: #1e3a8a;
-            --primary-light: #eff6ff;
-            --accent: #2563eb;
-            --text-main: #0f172a;
+            --primary: #0f172a;
+            --primary-accent: #1e3a8a;
+            --blue-accent: #2563eb;
+            --blue-glow: rgba(37, 99, 235, 0.08);
+            --text-title: #0f172a;
+            --text-body: #334155;
             --text-muted: #64748b;
             --bg-page: #f8fafc;
             --bg-card: #ffffff;
             --border: #e2e8f0;
+            --border-hover: #cbd5e1;
+            --radius-card: 14px;
         }
+
         * { box-sizing: border-box; margin: 0; padding: 0; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background: var(--bg-page);
-            color: var(--text-main);
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-body);
             line-height: 1.6;
-            padding: 2rem 1rem;
+            -webkit-font-smoothing: antialiased;
         }
-        .container {
-            max-width: 1040px;
+
+        /* Top Nav */
+        .site-nav {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border);
+            padding: 0.875rem 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+        .nav-inner {
+            max-width: 1140px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 1.15rem;
+            letter-spacing: -0.02em;
+        }
+        .brand-badge {
+            background: #0f172a;
+            color: #ffffff;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 4px;
+            letter-spacing: 0.04em;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.25rem;
+            align-items: center;
+        }
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: color 0.15s ease;
+        }
+        .nav-links a:hover { color: var(--blue-accent); }
+        .nav-cta {
+            background: #1e3a8a !important;
+            color: #ffffff !important;
+            padding: 0.45rem 0.95rem;
+            border-radius: 8px;
+            font-weight: 700 !important;
+            font-size: 0.8rem !important;
+            transition: all 0.2s ease !important;
+        }
+        .nav-cta:hover {
+            background: #1d4ed8 !important;
+            transform: translateY(-1px);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 3.5rem 1.5rem 3rem;
+            text-align: center;
+        }
+        .hero-container {
+            max-width: 820px;
             margin: 0 auto;
         }
-        header {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-top: 4px solid var(--primary);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
-        }
-        .badge {
-            display: inline-block;
+        .pill-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
             background: #ecfdf5;
-            color: #047857;
             border: 1px solid #a7f3d0;
+            color: #047857;
             font-size: 0.75rem;
             font-weight: 700;
-            padding: 4px 10px;
+            padding: 4px 12px;
             border-radius: 9999px;
-            margin-bottom: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
+            margin-bottom: 1.25rem;
+            letter-spacing: 0.02em;
         }
-        h1 {
-            font-size: 1.75rem;
+        .pulse-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #10b981;
+            box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3);
+            animation: pulseAnim 2s infinite;
+        }
+        @keyframes pulseAnim {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.9); }
+        }
+        .hero h1 {
+            font-size: 2.25rem;
             font-weight: 800;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
+            color: #0f172a;
+            line-height: 1.25;
+            letter-spacing: -0.03em;
+            margin-bottom: 1rem;
         }
-        header p {
+        .hero h1 span {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            font-size: 1.05rem;
             color: var(--text-muted);
-            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
         }
-        .stats-bar {
-            margin-top: 1.25rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
+
+        /* Search & Filter Bar */
+        .search-box-wrap {
+            max-width: 620px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .search-input {
+            width: 100%;
+            padding: 0.95rem 1.25rem 0.95rem 3rem;
+            font-size: 0.95rem;
+            font-family: inherit;
+            border: 1px solid #cbd5e1;
+            border-radius: 12px;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+            transition: all 0.2s ease;
+            outline: none;
+        }
+        .search-input:focus {
+            border-color: var(--blue-accent);
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+        }
+        .search-icon {
+            position: absolute;
+            left: 1.15rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+        }
+
+        /* Content Layout */
+        .content-wrap {
+            max-width: 1140px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+        .meta-stats-row {
             display: flex;
-            gap: 1.5rem;
-            font-size: 0.875rem;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 1.25rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 1.5rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
         }
-        .stats-bar strong { color: var(--text-main); }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 1rem;
-            margin-bottom: 2.5rem;
+        .meta-stats-row strong {
+            color: var(--text-title);
         }
-        .card {
-            background: var(--bg-card);
+
+        /* Grid Cards */
+        .notices-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+            gap: 1.25rem;
+        }
+        .notice-card {
+            background: #ffffff;
             border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 1.25rem;
+            border-radius: var(--radius-card);
+            padding: 1.35rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
             text-decoration: none;
             color: inherit;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
         }
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
-            border-color: var(--accent);
+        .notice-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #e2e8f0;
+            transition: background 0.2s ease;
         }
-        .card-tag {
-            font-size: 0.7rem;
+        .notice-card:hover {
+            transform: translateY(-3px);
+            border-color: #93c5fd;
+            box-shadow: 0 10px 24px -4px rgba(15, 23, 42, 0.08);
+        }
+        .notice-card:hover::before {
+            background: #2563eb;
+        }
+
+        /* Card Elements */
+        .card-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.85rem;
+        }
+        .tag-pill {
+            font-size: 0.6875rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--accent);
-            margin-bottom: 0.5rem;
+            letter-spacing: 0.04em;
+            padding: 3px 8px;
+            border-radius: 6px;
         }
-        .card-title {
+        .tag-upsc { background: #fef3c7; color: #92400e; }
+        .tag-ssc { background: #eff6ff; color: #1d4ed8; }
+        .tag-nta { background: #f0fdf4; color: #15803d; }
+        .tag-banking { background: #faf5ff; color: #7e22ce; }
+        .tag-railway { background: #fff1f2; color: #be123c; }
+        .tag-cbse { background: #ecfeff; color: #0e7490; }
+        .tag-defence { background: #f3f4f6; color: #374151; }
+        .tag-default { background: #f1f5f9; color: #475569; }
+
+        .card-time {
+            font-size: 0.725rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        .card-headline {
             font-size: 1rem;
             font-weight: 700;
-            color: var(--text-main);
-            margin-bottom: 1rem;
-            line-height: 1.4;
+            color: var(--text-title);
+            line-height: 1.45;
+            margin-bottom: 1.25rem;
         }
-        .card-action {
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-            font-size: 0.825rem;
-            font-weight: 700;
-            color: var(--accent);
+        .card-footer-action {
             margin-top: auto;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            font-size: 0.875rem;
-            color: var(--text-muted);
-        }
-        footer a {
-            color: var(--primary);
+            padding-top: 0.85rem;
+            border-top: 1px solid #f8fafc;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.8125rem;
             font-weight: 700;
-            text-decoration: none;
-            margin: 0 0.5rem;
+            color: var(--blue-accent);
         }
-        footer a:hover { text-decoration: underline; }
+        .card-footer-action svg {
+            transition: transform 0.2s ease;
+        }
+        .notice-card:hover .card-footer-action svg {
+            transform: translateX(4px);
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 3.5rem 1.5rem;
+            margin-top: 4rem;
+            border-top: 1px solid #1e293b;
+        }
+        .footer-inner {
+            max-width: 1140px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1.5rem;
+        }
+        .footer-logo {
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 1.25rem;
+            letter-spacing: -0.02em;
+        }
+        .footer-desc {
+            max-width: 600px;
+            font-size: 0.875rem;
+            line-height: 1.6;
+        }
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .footer-links a {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 600;
+            transition: color 0.15s ease;
+        }
+        .footer-links a:hover { color: #60a5fa; }
+        .footer-copy {
+            font-size: 0.75rem;
+            color: #64748b;
+            border-top: 1px solid #1e293b;
+            padding-top: 1.5rem;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.75rem; }
+            .notices-grid { grid-template-columns: 1fr; }
+            .nav-links a:not(.nav-cta) { display: none; }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <span class="badge">⚡ Official Statutory Intelligence Hub</span>
-            <h1>Sarkari.online Examination & Recruitment Directory 2026</h1>
-            <p>Real-time official gazette notices, examination schedules, admit cards, answer keys, and merit lists verified by Sarkari.online Editorial Network.</p>
-            <div class="stats-bar">
-                <div>Verified Bulletins: <strong>65 Active Notices</strong></div>
-                <div>Network Authority: <strong>Sarkari.online</strong></div>
-                <div>Last Updated: <strong>03 Sep 2026, 04:42 PM IST</strong></div>
-            </div>
-        </header>
 
-        <div class="grid">
-            <a href="https://sarkari.online/article/aibe-2026-bci-enrollment-exam-guide/" class="card" target="_blank">
-                <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Aibe 2026 Bci Enrollment Exam Guide</div>
-                </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
-                </div>
-            </a>
-            <a href="https://sarkari.online/article/aws-nsdc-ai-skill-initiative-2026/" class="card" target="_blank">
-                <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Aws Nsdc Ai Skill Initiative 2026</div>
-                </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
-                </div>
-            </a>
-            <a href="https://sarkari.online/article/azim-premji-foundation-scholarship-2026/" class="card" target="_blank">
-                <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Azim Premji Foundation Scholarship 2026</div>
-                </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
-                </div>
-            </a>
-            <a href="https://sarkari.online/article/bpsc-tre-4-application-postponed-dates/" class="card" target="_blank">
-                <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Bpsc Tre 4 Application Postponed Dates</div>
-                </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
-                </div>
-            </a>
-            <a href="https://sarkari.online/article/cbse-academic-update-2026-guidelines/" class="card" target="_blank">
-                <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Cbse Academic Update 2026 Guidelines</div>
+    <!-- Nav -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="https://sarkari.online/" class="brand-logo" target="_blank">
+                Sarkari.online
+                <span class="brand-badge">KNOWLEDGE HUB</span>
+            </a>
+            <div class="nav-links">
+                <a href="https://sarkari.online/state-jobs/" target="_blank">State Govt Jobs</a>
+                <a href="https://sarkari.online/tools/" target="_blank">Examination Tools</a>
+                <a href="https://sarkari.online/category/exam-results/" target="_blank">Scorecards</a>
+                <a href="https://sarkari.online/" class="nav-cta" target="_blank">Official Portal &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-container">
+            <div class="pill-badge">
+                <span class="pulse-dot"></span>
+                Verified Statutory Gazette Intelligence &middot; 2026
+            </div>
+            <h1>Open Directory of <span>Govt Job Alerts &amp; Exams</span></h1>
+            <p>Direct official recruitment circulars, examination calendars, hall tickets, cutoff marks, and merit list archives curated by Sarkari.online.</p>
+
+            <div class="search-box-wrap">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="searchInput" class="search-input" placeholder="Filter 65 official bulletins (e.g. UPSC, SSC, NEET, Banking, Police)...">
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main class="content-wrap">
+        <div class="meta-stats-row">
+            <div>Curated Bulletins: <strong id="activeCount">65 Official Notices Active</strong></div>
+            <div>Dofollow Network: <strong>100% Direct Authority Links</strong></div>
+            <div>Last Updated: <strong>03 Sep 2026, 04:48 PM IST</strong></div>
+        </div>
+
+        <div class="notices-grid" id="noticesGrid">
+            <a href="https://sarkari.online/article/aibe-2026-bci-enrollment-exam-guide/" class="notice-card" target="_blank" data-search="aibe 2026 bci enrollment exam guide statutory">
+                <div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">AIBE 2026 Bci Enrollment Exam Guide</div>
+                </div>
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+            </a>
+            <a href="https://sarkari.online/article/aws-nsdc-ai-skill-initiative-2026/" class="notice-card" target="_blank" data-search="aws nsdc ai skill initiative 2026 statutory">
+                <div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">AWS NSDC AI Skill Initiative 2026</div>
+                </div>
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+            </a>
+            <a href="https://sarkari.online/article/azim-premji-foundation-scholarship-2026/" class="notice-card" target="_blank" data-search="azim premji foundation scholarship 2026 statutory">
+                <div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Azim Premji Foundation Scholarship 2026</div>
+                </div>
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+            </a>
+            <a href="https://sarkari.online/article/bpsc-tre-4-application-postponed-dates/" class="notice-card" target="_blank" data-search="bpsc tre 4 application postponed dates statutory">
+                <div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">BPSC TRE 4 Application Postponed Dates</div>
+                </div>
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+            </a>
+            <a href="https://sarkari.online/article/cbse-academic-update-2026-guidelines/" class="notice-card" target="_blank" data-search="cbse academic update 2026 guidelines cbse board">
+                <div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-cbse">CBSE Board</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">CBSE Academic Update 2026 Guidelines</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/cbse-board-exam-2027-date-sheet/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/cbse-board-exam-2027-date-sheet/" class="notice-card" target="_blank" data-search="cbse board exam 2027 date sheet cbse board">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Cbse Board Exam 2027 Date Sheet</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-cbse">CBSE Board</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">CBSE Board Exam 2027 Date Sheet</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/cbse-ctet-2026-notification-eligibility/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/cbse-ctet-2026-notification-eligibility/" class="notice-card" target="_blank" data-search="cbse ctet 2026 notification eligibility cbse board">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Cbse Ctet 2026 Notification Eligibility</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-cbse">CBSE Board</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">CBSE Ctet 2026 Notification Eligibility</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/coal-india-mt-answer-key-2026/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/coal-india-mt-answer-key-2026/" class="notice-card" target="_blank" data-search="coal india mt answer key 2026 statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Coal India Mt Answer Key 2026</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Coal India Mt Answer Key 2026</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/csir-net-june-2026-result-scorecard/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/csir-net-june-2026-result-scorecard/" class="notice-card" target="_blank" data-search="csir net june 2026 result scorecard statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Csir Net June 2026 Result Scorecard</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">CSIR NET June 2026 Result Scorecard</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/cuet-ug-2026-subject-mapping-guide/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/cuet-ug-2026-subject-mapping-guide/" class="notice-card" target="_blank" data-search="cuet ug 2026 subject mapping guide statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Cuet Ug 2026 Subject Mapping Guide</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">CUET Ug 2026 Subject Mapping Guide</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/digilocker-abc-id-creation-2026/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/digilocker-abc-id-creation-2026/" class="notice-card" target="_blank" data-search="digilocker abc id creation 2026 statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Digilocker Abc Id Creation 2026</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Digilocker ABC ID Creation 2026</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/gate-2026-exam-dates-registration/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/gate-2026-exam-dates-registration/" class="notice-card" target="_blank" data-search="gate 2026 exam dates registration statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Gate 2026 Exam Dates Registration</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">GATE 2026 Exam Dates Registration</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/gate-2027-syllabus-exam-pattern-eligibility/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/gate-2027-syllabus-exam-pattern-eligibility/" class="notice-card" target="_blank" data-search="gate 2027 syllabus exam pattern eligibility statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Gate 2027 Syllabus Exam Pattern Eligibility</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">GATE 2027 Syllabus Exam Pattern Eligibility</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/how-to-create-apaar-id-digilocker/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/how-to-create-apaar-id-digilocker/" class="notice-card" target="_blank" data-search="how to create apaar id digilocker statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">How To Create Apaar Id Digilocker</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">How To Create APAAR ID Digilocker</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/hpbose-2026-exam-schedule-guide/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/hpbose-2026-exam-schedule-guide/" class="notice-card" target="_blank" data-search="hpbose 2026 exam schedule guide statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Hpbose 2026 Exam Schedule Guide</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">HPBOSE 2026 Exam Schedule Guide</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/iaf-agniveer-vayu-recruitment-2026/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/iaf-agniveer-vayu-recruitment-2026/" class="notice-card" target="_blank" data-search="iaf agniveer vayu recruitment 2026 defence &amp; police">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Iaf Agniveer Vayu Recruitment 2026</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-defence">Defence &amp; Police</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Iaf Agniveer Vayu Recruitment 2026</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/ibps-po-2026-prelims-admit-card-download-active/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/ibps-po-2026-prelims-admit-card-download-active/" class="notice-card" target="_blank" data-search="ibps po 2026 prelims admit card download active banking">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Ibps Po 2026 Prelims Admit Card Download Active</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-banking">Banking</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">IBPS PO 2026 Prelims Admit Card Download Active</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/ibps-po-2026-prelims-notification/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/ibps-po-2026-prelims-notification/" class="notice-card" target="_blank" data-search="ibps po 2026 prelims notification banking">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Ibps Po 2026 Prelims Notification</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-banking">Banking</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">IBPS PO 2026 Prelims Notification</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/ibps-rrb-2026-registration-apply-online/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/ibps-rrb-2026-registration-apply-online/" class="notice-card" target="_blank" data-search="ibps rrb 2026 registration apply online banking">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Ibps Rrb 2026 Registration Apply Online</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-banking">Banking</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">IBPS RRB 2026 Registration Apply Online</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/ibps-rrb-clerk-2026-registration/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/ibps-rrb-clerk-2026-registration/" class="notice-card" target="_blank" data-search="ibps rrb clerk 2026 registration banking">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Ibps Rrb Clerk 2026 Registration</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-banking">Banking</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">IBPS RRB Clerk 2026 Registration</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/icar-aieea-pg-result-2026-scorecard/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/icar-aieea-pg-result-2026-scorecard/" class="notice-card" target="_blank" data-search="icar aieea pg result 2026 scorecard statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Icar Aieea Pg Result 2026 Scorecard</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">ICAR Aieea Pg Result 2026 Scorecard</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/identify-fake-job-exam-portals/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/identify-fake-job-exam-portals/" class="notice-card" target="_blank" data-search="identify fake job exam portals statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Identify Fake Job Exam Portals</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Identify Fake Job Exam Portals</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/ignou-july-2026-admissions-extended/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/ignou-july-2026-admissions-extended/" class="notice-card" target="_blank" data-search="ignou july 2026 admissions extended statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Ignou July 2026 Admissions Extended</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Ignou July 2026 Admissions Extended</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/india-post-recruitment-2026-application/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/india-post-recruitment-2026-application/" class="notice-card" target="_blank" data-search="india post recruitment 2026 application statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">India Post Recruitment 2026 Application</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">India Post Recruitment 2026 Application</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/indian-army-agniveer-recruitment-2026/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/indian-army-agniveer-recruitment-2026/" class="notice-card" target="_blank" data-search="indian army agniveer recruitment 2026 defence &amp; police">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Indian Army Agniveer Recruitment 2026</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-defence">Defence &amp; Police</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Indian Army Agniveer Recruitment 2026</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/itbp-recruitment-2026-application-guide/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/itbp-recruitment-2026-application-guide/" class="notice-card" target="_blank" data-search="itbp recruitment 2026 application guide defence &amp; police">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Itbp Recruitment 2026 Application Guide</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-defence">Defence &amp; Police</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">ITBP Recruitment 2026 Application Guide</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/jee-main-2027-syllabus-weightage/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/jee-main-2027-syllabus-weightage/" class="notice-card" target="_blank" data-search="jee main 2027 syllabus weightage nta / medical">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Jee Main 2027 Syllabus Weightage</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-nta">NTA / Medical</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">JEE Main 2027 Syllabus Weightage</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/kcet-2026-counselling-seat-allotment/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/kcet-2026-counselling-seat-allotment/" class="notice-card" target="_blank" data-search="kcet 2026 counselling seat allotment statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Kcet 2026 Counselling Seat Allotment</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">KCET 2026 Counselling Seat Allotment</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/kpsc-2026-recruitment-kas-guide/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/kpsc-2026-recruitment-kas-guide/" class="notice-card" target="_blank" data-search="kpsc 2026 recruitment kas guide statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Kpsc 2026 Recruitment Kas Guide</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">KPSC 2026 Recruitment Kas Guide</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/link-aadhaar-abc-digilocker-2026/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/link-aadhaar-abc-digilocker-2026/" class="notice-card" target="_blank" data-search="link aadhaar abc digilocker 2026 statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Link Aadhaar Abc Digilocker 2026</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Link Aadhaar ABC Digilocker 2026</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/maharashtra-3-year-llb-round-2-allotment-2026/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/maharashtra-3-year-llb-round-2-allotment-2026/" class="notice-card" target="_blank" data-search="maharashtra 3 year llb round 2 allotment 2026 statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Maharashtra 3 Year Llb Round 2 Allotment 2026</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Maharashtra 3 Year Llb Round 2 Allotment 2026</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/maharashtra-neet-ug-2026-round-1-allotment/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/maharashtra-neet-ug-2026-round-1-allotment/" class="notice-card" target="_blank" data-search="maharashtra neet ug 2026 round 1 allotment nta / medical">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Maharashtra Neet Ug 2026 Round 1 Allotment</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-nta">NTA / Medical</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Maharashtra NEET Ug 2026 Round 1 Allotment</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/mht-cet-2026-cap-counselling-results/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/mht-cet-2026-cap-counselling-results/" class="notice-card" target="_blank" data-search="mht cet 2026 cap counselling results statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Mht Cet 2026 Cap Counselling Results</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Mht Cet 2026 CAP Counselling Results</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/mht-cet-2026-cap-round-4-options/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/mht-cet-2026-cap-round-4-options/" class="notice-card" target="_blank" data-search="mht cet 2026 cap round 4 options statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Mht Cet 2026 Cap Round 4 Options</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Mht Cet 2026 CAP Round 4 Options</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/nbems-fmge-2026-third-test-dates/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/nbems-fmge-2026-third-test-dates/" class="notice-card" target="_blank" data-search="nbems fmge 2026 third test dates statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Nbems Fmge 2026 Third Test Dates</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">NBEMS FMGE 2026 Third Test Dates</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/neet-pg-2026-answer-key/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/neet-pg-2026-answer-key/" class="notice-card" target="_blank" data-search="neet pg 2026 answer key nta / medical">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Neet Pg 2026 Answer Key</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-nta">NTA / Medical</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">NEET Pg 2026 Answer Key</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/neet-pg-2026-exam-time-shift-timings/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/neet-pg-2026-exam-time-shift-timings/" class="notice-card" target="_blank" data-search="neet pg 2026 exam time shift timings nta / medical">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Neet Pg 2026 Exam Time Shift Timings</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-nta">NTA / Medical</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">NEET Pg 2026 Exam Time Shift Timings</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/neet-ug-2026-biology-weightage-guide/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/neet-ug-2026-biology-weightage-guide/" class="notice-card" target="_blank" data-search="neet ug 2026 biology weightage guide nta / medical">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Neet Ug 2026 Biology Weightage Guide</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-nta">NTA / Medical</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">NEET Ug 2026 Biology Weightage Guide</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/neet-ug-2026-counselling-registration/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/neet-ug-2026-counselling-registration/" class="notice-card" target="_blank" data-search="neet ug 2026 counselling registration nta / medical">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Neet Ug 2026 Counselling Registration</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-nta">NTA / Medical</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">NEET Ug 2026 Counselling Registration</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/neet-ug-2026-counselling-schedule-released-mcc-nic-in/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/neet-ug-2026-counselling-schedule-released-mcc-nic-in/" class="notice-card" target="_blank" data-search="neet ug 2026 counselling schedule released mcc nic in nta / medical">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Neet Ug 2026 Counselling Schedule Released Mcc Nic In</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-nta">NTA / Medical</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">NEET Ug 2026 Counselling Schedule Released MCC Nic In</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/nfsc-fellowship-2026-application-guide/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/nfsc-fellowship-2026-application-guide/" class="notice-card" target="_blank" data-search="nfsc fellowship 2026 application guide statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Nfsc Fellowship 2026 Application Guide</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Nfsc Fellowship 2026 Application Guide</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/nsp-scholarship-2026-27-registration-guide/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/nsp-scholarship-2026-27-registration-guide/" class="notice-card" target="_blank" data-search="nsp scholarship 2026 27 registration guide statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Nsp Scholarship 2026 27 Registration Guide</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Nsp Scholarship 2026 27 Registration Guide</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/odisha-deled-result-2026-sams-ct/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/odisha-deled-result-2026-sams-ct/" class="notice-card" target="_blank" data-search="odisha deled result 2026 sams ct statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Odisha Deled Result 2026 Sams Ct</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Odisha DELED Result 2026 SAMS Ct</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/pm-yasasvi-scholarship-2026-application-1/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/pm-yasasvi-scholarship-2026-application-1/" class="notice-card" target="_blank" data-search="pm yasasvi scholarship 2026 application 1 statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Pm Yasasvi Scholarship 2026 Application 1</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Pm Yasasvi Scholarship 2026 Application 1</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/pmsss-2026-choice-filling-guide/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/pmsss-2026-choice-filling-guide/" class="notice-card" target="_blank" data-search="pmsss 2026 choice filling guide statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Pmsss 2026 Choice Filling Guide</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">PMSSS 2026 Choice Filling Guide</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/punjab-pti-recruitment-2026-apply-now/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/punjab-pti-recruitment-2026-apply-now/" class="notice-card" target="_blank" data-search="punjab pti recruitment 2026 apply now statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Punjab Pti Recruitment 2026 Apply Now</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Punjab PTI Recruitment 2026 Apply Now</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/rajasthan-neet-ug-2026-round-1-seat-allotment/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/rajasthan-neet-ug-2026-round-1-seat-allotment/" class="notice-card" target="_blank" data-search="rajasthan neet ug 2026 round 1 seat allotment nta / medical">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Rajasthan Neet Ug 2026 Round 1 Seat Allotment</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-nta">NTA / Medical</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Rajasthan NEET Ug 2026 Round 1 Seat Allotment</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/rrb-junior-engineer-2026-syllabus-roadmap/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/rrb-junior-engineer-2026-syllabus-roadmap/" class="notice-card" target="_blank" data-search="rrb junior engineer 2026 syllabus roadmap railways">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Rrb Junior Engineer 2026 Syllabus Roadmap</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-railway">Railways</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">RRB Junior Engineer 2026 Syllabus Roadmap</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/rrb-recruitment-2026-notification-exam-dates/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/rrb-recruitment-2026-notification-exam-dates/" class="notice-card" target="_blank" data-search="rrb recruitment 2026 notification exam dates railways">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Rrb Recruitment 2026 Notification Exam Dates</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-railway">Railways</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">RRB Recruitment 2026 Notification Exam Dates</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/rvunl-recruitment-2026-last-date/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/rvunl-recruitment-2026-last-date/" class="notice-card" target="_blank" data-search="rvunl recruitment 2026 last date statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Rvunl Recruitment 2026 Last Date</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">RVUNL Recruitment 2026 Last Date</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/sbi-po-2026-syllabus-selection-process/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/sbi-po-2026-syllabus-selection-process/" class="notice-card" target="_blank" data-search="sbi po 2026 syllabus selection process banking">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Sbi Po 2026 Syllabus Selection Process</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-banking">Banking</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">SBI PO 2026 Syllabus Selection Process</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/sbi-po-prelims-2026-result/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/sbi-po-prelims-2026-result/" class="notice-card" target="_blank" data-search="sbi po prelims 2026 result banking">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Sbi Po Prelims 2026 Result</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-banking">Banking</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">SBI PO Prelims 2026 Result</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/sbi-trade-finance-officer-2026/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/sbi-trade-finance-officer-2026/" class="notice-card" target="_blank" data-search="sbi trade finance officer 2026 banking">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Sbi Trade Finance Officer 2026</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-banking">Banking</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">SBI Trade Finance Officer 2026</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/ssc-cgl-2026-notification-apply/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/ssc-cgl-2026-notification-apply/" class="notice-card" target="_blank" data-search="ssc cgl 2026 notification apply ssc">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Ssc Cgl 2026 Notification Apply</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-ssc">SSC</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">SSC CGL 2026 Notification Apply</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/ssc-cgl-2026-tier-1-exam-date/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/ssc-cgl-2026-tier-1-exam-date/" class="notice-card" target="_blank" data-search="ssc cgl 2026 tier 1 exam date ssc">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Ssc Cgl 2026 Tier 1 Exam Date</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-ssc">SSC</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">SSC CGL 2026 Tier 1 Exam Date</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/ssc-cgl-2026-tier-1-exam-guide/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/ssc-cgl-2026-tier-1-exam-guide/" class="notice-card" target="_blank" data-search="ssc cgl 2026 tier 1 exam guide ssc">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Ssc Cgl 2026 Tier 1 Exam Guide</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-ssc">SSC</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">SSC CGL 2026 Tier 1 Exam Guide</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/ssc-chsl-2026-tier-1-exam-guide/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/ssc-chsl-2026-tier-1-exam-guide/" class="notice-card" target="_blank" data-search="ssc chsl 2026 tier 1 exam guide ssc">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Ssc Chsl 2026 Tier 1 Exam Guide</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-ssc">SSC</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">SSC CHSL 2026 Tier 1 Exam Guide</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/ssc-mts-havaldar-2026-notification/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/ssc-mts-havaldar-2026-notification/" class="notice-card" target="_blank" data-search="ssc mts havaldar 2026 notification ssc">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Ssc Mts Havaldar 2026 Notification</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-ssc">SSC</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">SSC MTS Havaldar 2026 Notification</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/ssc-otr-registration-guide-2026/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/ssc-otr-registration-guide-2026/" class="notice-card" target="_blank" data-search="ssc otr registration guide 2026 ssc">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Ssc Otr Registration Guide 2026</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-ssc">SSC</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">SSC OTR Registration Guide 2026</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/ugc-net-2026-syllabus-jrf-cutoff/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/ugc-net-2026-syllabus-jrf-cutoff/" class="notice-card" target="_blank" data-search="ugc net 2026 syllabus jrf cutoff statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Ugc Net 2026 Syllabus Jrf Cutoff</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">UGC NET 2026 Syllabus Jrf Cutoff</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/ugc-net-june-2026-result-scorecard/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/ugc-net-june-2026-result-scorecard/" class="notice-card" target="_blank" data-search="ugc net june 2026 result scorecard statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Ugc Net June 2026 Result Scorecard</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">UGC NET June 2026 Result Scorecard</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/ugc-phd-admission-guidelines-2026/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/ugc-phd-admission-guidelines-2026/" class="notice-card" target="_blank" data-search="ugc phd admission guidelines 2026 statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Ugc Phd Admission Guidelines 2026</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">UGC Phd Admission Guidelines 2026</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/upsc-civil-services-mains-2026-schedule/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/upsc-civil-services-mains-2026-schedule/" class="notice-card" target="_blank" data-search="upsc civil services mains 2026 schedule upsc">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Upsc Civil Services Mains 2026 Schedule</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-upsc">UPSC</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">UPSC Civil Services Mains 2026 Schedule</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/uptet-2026-eligibility-syllabus-roadmap/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/uptet-2026-eligibility-syllabus-roadmap/" class="notice-card" target="_blank" data-search="uptet 2026 eligibility syllabus roadmap statutory">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Uptet 2026 Eligibility Syllabus Roadmap</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-default">Statutory</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">Uptet 2026 Eligibility Syllabus Roadmap</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
-            <a href="https://sarkari.online/article/wbjee-2027-exam-application-guide/" class="card" target="_blank">
+            <a href="https://sarkari.online/article/wbjee-2027-exam-application-guide/" class="notice-card" target="_blank" data-search="wbjee 2027 exam application guide nta / medical">
                 <div>
-                    <div class="card-tag">Official Bulletin &middot; Live</div>
-                    <div class="card-title">Wbjee 2027 Exam Application Guide</div>
+                    <div class="card-top">
+                        <span class="tag-pill tag-nta">NTA / Medical</span>
+                        <span class="card-time">Verified Update</span>
+                    </div>
+                    <div class="card-headline">WBJEE 2027 Exam Application Guide</div>
                 </div>
-                <div class="card-action">
-                    Read Complete Notification on Sarkari.online &rarr;
+                <div class="card-footer-action">
+                    <span>Verify Official Bulletin</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
             </a>
         </div>
+    </main>
 
-        <footer>
-            <p>Independent Educational Information & Statutory Recruitment Intelligence Network.</p>
-            <p style="margin-top: 0.5rem;">
-                <a href="https://sarkari.online/">Sarkari.online Portal</a> &bull;
-                <a href="https://sarkari.online/state-jobs/">State Govt Jobs 2026</a> &bull;
-                <a href="https://sarkari.online/tools/">Examination Calculators & Tools</a>
-            </p>
-            <p style="margin-top: 0.75rem; font-size: 0.75rem;">&copy; 2026 Sarkari.online. All Rights Reserved.</p>
-        </footer>
-    </div>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-logo">Sarkari.online</div>
+            <p class="footer-desc">India's premier open statutory recruitment updates, university admissions, and competitive examination intelligence network. Published strictly for candidate awareness.</p>
+            <div class="footer-links">
+                <a href="https://sarkari.online/" target="_blank">Main Intelligence Portal</a>
+                <a href="https://sarkari.online/state-jobs/" target="_blank">State Govt Jobs 2026</a>
+                <a href="https://sarkari.online/tools/" target="_blank">Age &amp; Salary Calculators</a>
+                <a href="https://sarkari.online/privacy-policy/" target="_blank">Privacy Policy</a>
+                <a href="https://sarkari.online/terms/" target="_blank">Terms of Service</a>
+            </div>
+            <div class="footer-copy">&copy; 2026 Sarkari.online. All Rights Reserved. Open Public Hub hosted on GitHub Pages.</div>
+        </div>
+    </footer>
+
+    <script>
+        const input = document.getElementById("searchInput");
+        const cards = document.querySelectorAll(".notice-card");
+        const countSpan = document.getElementById("activeCount");
+
+        input.addEventListener("input", (e) => {
+            const val = e.target.value.toLowerCase().trim();
+            let visible = 0;
+            cards.forEach(card => {
+                const searchData = card.getAttribute("data-search");
+                if (!val || searchData.includes(val)) {
+                    card.style.display = "flex";
+                    visible++;
+                } else {
+                    card.style.display = "none";
+                }
+            });
+            countSpan.textContent = visible + " Official Notices Active";
+        });
+    </script>
 </body>
 </html>
