@@ -14,9 +14,9 @@ Explore the complete guide to Indian Air Force Agniveer Vayu recruitment 2026, c
 
 | Metric | Specification |
 | :--- | :--- |
-| **Conducting Authority** | Official Statutory Examination Authority |
+| **Conducting Authority** | Indian Air Force (Nausena Bharti / Agnipath) |
 | **Announcement Date** | 23 August 2026 |
-| **Official Portal** | [trends.google.com](https://trends.google.com/trending/rss?geo=IN) |
+| **Official Portal** | [agnipathvayu.cdac.in](https://agnipathvayu.cdac.in) |
 | **Complete Notification & Cutoff** | [Check Details on Sarkari.online](https://sarkari.online/article/iaf-agniveer-vayu-recruitment-2026/) |
 
 ---
@@ -24,7 +24,7 @@ Explore the complete guide to Indian Air Force Agniveer Vayu recruitment 2026, c
 ### 🔗 Important Verification & Application Links
 
 - 🌐 **Official Bulletin**: [Read Complete Notification, Cut-Off Marks & Apply Online on Sarkari.online](https://sarkari.online/article/iaf-agniveer-vayu-recruitment-2026/)
-- 🏛️ **Authority Portal**: [trends.google.com](https://trends.google.com/trending/rss?geo=IN)
+- 🏛️ **Authority Portal**: [agnipathvayu.cdac.in](https://agnipathvayu.cdac.in)
 - 📚 **Sarkari.online Hub**: [Home](https://sarkari.online/) | [State Govt Jobs 2026](https://sarkari.online/state-jobs/) | [Examination Calculators](https://sarkari.online/tools/)
 
 ---
