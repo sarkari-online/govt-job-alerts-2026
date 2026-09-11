@@ -14,9 +14,9 @@ Access the official GATE 2026 schedule, registration timeline, and eligibility c
 
 | Metric | Specification |
 | :--- | :--- |
-| **Conducting Authority** | Official Statutory Examination Authority |
+| **Conducting Authority** | IIT Roorkee (GATE 2026 Organizing Institute) |
 | **Announcement Date** | 24 August 2026 |
-| **Official Portal** | [trends.google.com](https://trends.google.com/trending/rss?geo=IN) |
+| **Official Portal** | [gate2026.iitr.ac.in](https://gate2026.iitr.ac.in) |
 | **Complete Notification & Cutoff** | [Check Details on Sarkari.online](https://sarkari.online/article/gate-2026-exam-dates-registration/) |
 
 ---
@@ -24,7 +24,7 @@ Access the official GATE 2026 schedule, registration timeline, and eligibility c
 ### 🔗 Important Verification & Application Links
 
 - 🌐 **Official Bulletin**: [Read Complete Notification, Cut-Off Marks & Apply Online on Sarkari.online](https://sarkari.online/article/gate-2026-exam-dates-registration/)
-- 🏛️ **Authority Portal**: [trends.google.com](https://trends.google.com/trending/rss?geo=IN)
+- 🏛️ **Authority Portal**: [gate2026.iitr.ac.in](https://gate2026.iitr.ac.in)
 - 📚 **Sarkari.online Hub**: [Home](https://sarkari.online/) | [State Govt Jobs 2026](https://sarkari.online/state-jobs/) | [Examination Calculators](https://sarkari.online/tools/)
 
 ---
