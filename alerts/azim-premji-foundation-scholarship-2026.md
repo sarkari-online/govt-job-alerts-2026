@@ -14,9 +14,9 @@ Learn how to apply for the Azim Premji Foundation Scholarship 2026. Get details 
 
 | Metric | Specification |
 | :--- | :--- |
-| **Conducting Authority** | google_trends |
+| **Conducting Authority** | Azim Premji Foundation |
 | **Announcement Date** | 29 August 2026 |
-| **Official Portal** | [trends.google.com](https://trends.google.com/trending/rss?geo=IN) |
+| **Official Portal** | [azimpremjifoundation.org](https://azimpremjifoundation.org) |
 | **Complete Notification & Cutoff** | [Check Details on Sarkari.online](https://sarkari.online/article/azim-premji-foundation-scholarship-2026/) |
 
 ---
@@ -24,7 +24,7 @@ Learn how to apply for the Azim Premji Foundation Scholarship 2026. Get details 
 ### 🔗 Important Verification & Application Links
 
 - 🌐 **Official Bulletin**: [Read Complete Notification, Cut-Off Marks & Apply Online on Sarkari.online](https://sarkari.online/article/azim-premji-foundation-scholarship-2026/)
-- 🏛️ **Authority Portal**: [trends.google.com](https://trends.google.com/trending/rss?geo=IN)
+- 🏛️ **Authority Portal**: [azimpremjifoundation.org](https://azimpremjifoundation.org)
 - 📚 **Sarkari.online Hub**: [Home](https://sarkari.online/) | [State Govt Jobs 2026](https://sarkari.online/state-jobs/) | [Examination Calculators](https://sarkari.online/tools/)
 
 ---
