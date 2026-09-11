@@ -1,4 +1,4 @@
-# NEET UG 2026 All India Quota (AIQ) Counselling Schedule Released by MCC: Check Round 1 Choice Filling Dates
+# NEET UG 2026 All India Quota (AIQ) Counselling: Official Exam Guidelines & Status Update
 
 > **Official Statutory Verification Desk:** Curated by [Sarkari.online Information Network](https://sarkari.online/)
 
@@ -6,7 +6,7 @@
 
 ## ⚡ Executive Summary & Direct Answer
 
-Medical Counselling Committee (MCC) announces the complete 4-round schedule for NEET UG 2026 AIQ 15% seats, AIIMS, JIPMER, Deemed and Central Universities.
+Stay updated with the latest NEET UG 2026 guidelines from the NTA. Check the current status of exam timings, dress code, and mandatory document requirements for the upcoming session.
 
 ---
 
