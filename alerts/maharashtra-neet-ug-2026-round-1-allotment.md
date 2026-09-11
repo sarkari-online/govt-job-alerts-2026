@@ -1,4 +1,4 @@
-# Maharashtra NEET UG 2026 Round 1 Allotment, Cutoff & Dates
+# Maharashtra NEET UG 2026 Round 1 Allotment, Cutoff & Dates (Application Closed)
 
 > **Official Statutory Verification Desk:** Curated by [Sarkari.online Information Network](https://sarkari.online/)
 
