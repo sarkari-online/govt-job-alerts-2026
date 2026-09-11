@@ -14,9 +14,9 @@ Get the complete guide to Indian Army Agniveer Recruitment 2026. Learn about the
 
 | Metric | Specification |
 | :--- | :--- |
-| **Conducting Authority** | Official Statutory Examination Authority |
+| **Conducting Authority** | Indian Army (Join Indian Army) |
 | **Announcement Date** | 26 August 2026 |
-| **Official Portal** | [trends.google.com](https://trends.google.com/trending/rss?geo=IN) |
+| **Official Portal** | [joinindianarmy.nic.in](https://joinindianarmy.nic.in) |
 | **Complete Notification & Cutoff** | [Check Details on Sarkari.online](https://sarkari.online/article/indian-army-agniveer-recruitment-2026/) |
 
 ---
@@ -24,7 +24,7 @@ Get the complete guide to Indian Army Agniveer Recruitment 2026. Learn about the
 ### 🔗 Important Verification & Application Links
 
 - 🌐 **Official Bulletin**: [Read Complete Notification, Cut-Off Marks & Apply Online on Sarkari.online](https://sarkari.online/article/indian-army-agniveer-recruitment-2026/)
-- 🏛️ **Authority Portal**: [trends.google.com](https://trends.google.com/trending/rss?geo=IN)
+- 🏛️ **Authority Portal**: [joinindianarmy.nic.in](https://joinindianarmy.nic.in)
 - 📚 **Sarkari.online Hub**: [Home](https://sarkari.online/) | [State Govt Jobs 2026](https://sarkari.online/state-jobs/) | [Examination Calculators](https://sarkari.online/tools/)
 
 ---
