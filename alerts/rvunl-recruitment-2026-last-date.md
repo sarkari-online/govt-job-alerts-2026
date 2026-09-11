@@ -1,4 +1,4 @@
-# RVUNL Recruitment 2026: Last Date Today, Apply Online for 2005 Posts
+# RVUNL Recruitment 2026: Application Closed for 2005 Posts, Exam Date & Next Stage
 
 > **Official Statutory Verification Desk:** Curated by [Sarkari.online Information Network](https://sarkari.online/)
 
@@ -6,7 +6,7 @@
 
 ## ⚡ Executive Summary & Direct Answer
 
-RVUNL Recruitment 2026 final application deadline is today for 2005 vacancies. Check direct link, eligibility, and how to apply online.
+RVUNL Recruitment 2026 online application process has closed for 2,005 vacancies. Check CBT exam date, admit card updates, shift timings, and syllabus.
 
 ---
 
@@ -14,9 +14,9 @@ RVUNL Recruitment 2026 final application deadline is today for 2005 vacancies. C
 
 | Metric | Specification |
 | :--- | :--- |
-| **Conducting Authority** | Official Statutory Authority |
+| **Conducting Authority** | Rajasthan Rajya Vidyut Utpadan Nigam Limited (RVUNL) |
 | **Announcement Date** | 02 September 2026 |
-| **Official Portal** | [sarkari.online](https://sarkari.online) |
+| **Official Portal** | [energy.rajasthan.gov.in](https://energy.rajasthan.gov.in/rvunl) |
 | **Complete Notification & Cutoff** | [Check Details on Sarkari.online](https://sarkari.online/article/rvunl-recruitment-2026-last-date/) |
 
 ---
@@ -24,7 +24,7 @@ RVUNL Recruitment 2026 final application deadline is today for 2005 vacancies. C
 ### 🔗 Important Verification & Application Links
 
 - 🌐 **Official Bulletin**: [Read Complete Notification, Cut-Off Marks & Apply Online on Sarkari.online](https://sarkari.online/article/rvunl-recruitment-2026-last-date/)
-- 🏛️ **Authority Portal**: [sarkari.online](https://sarkari.online)
+- 🏛️ **Authority Portal**: [energy.rajasthan.gov.in](https://energy.rajasthan.gov.in/rvunl)
 - 📚 **Sarkari.online Hub**: [Home](https://sarkari.online/) | [State Govt Jobs 2026](https://sarkari.online/state-jobs/) | [Examination Calculators](https://sarkari.online/tools/)
 
 ---
