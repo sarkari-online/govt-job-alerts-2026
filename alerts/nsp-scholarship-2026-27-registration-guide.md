@@ -1,4 +1,4 @@
-# NSP Scholarship 2026-27: Fresh Registration & OTR Guide
+# NSP Scholarship 2026-27: OTR Registration, Deadlines & Application Guide
 
 > **Official Statutory Verification Desk:** Curated by [Sarkari.online Information Network](https://sarkari.online/)
 
@@ -6,7 +6,7 @@
 
 ## ⚡ Executive Summary & Direct Answer
 
-Learn how to register for the NSP Scholarship 2026-27. Follow our guide for mandatory OTR, eligibility criteria, and the step-by-step application process.
+The National Scholarship Portal has announced the 2026-27 application schedule. Check the latest deadlines for student applications and institute verification.
 
 ---
 
@@ -14,7 +14,7 @@ Learn how to register for the NSP Scholarship 2026-27. Follow our guide for mand
 
 | Metric | Specification |
 | :--- | :--- |
-| **Conducting Authority** | National Scholarship Portal (scholarships.gov.in) |
+| **Conducting Authority** | NSP (National Scholarship Portal) |
 | **Announcement Date** | 22 August 2026 |
 | **Official Portal** | [scholarships.gov.in](https://scholarships.gov.in) |
 | **Complete Notification & Cutoff** | [Check Details on Sarkari.online](https://sarkari.online/article/nsp-scholarship-2026-27-registration-guide/) |
