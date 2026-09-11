@@ -14,9 +14,9 @@ Odisha DElEd Result 2026 declared by SAMS. Check scorecard, counselling dates, c
 
 | Metric | Specification |
 | :--- | :--- |
-| **Conducting Authority** | Official Statutory Authority |
+| **Conducting Authority** | Student Academic Management System (SAMS Odisha) |
 | **Announcement Date** | 01 September 2026 |
-| **Official Portal** | [sarkari.online](https://sarkari.online) |
+| **Official Portal** | [scert.samsodisha.gov.in](https://scert.samsodisha.gov.in) |
 | **Complete Notification & Cutoff** | [Check Details on Sarkari.online](https://sarkari.online/article/odisha-deled-result-2026-sams-ct/) |
 
 ---
@@ -24,7 +24,7 @@ Odisha DElEd Result 2026 declared by SAMS. Check scorecard, counselling dates, c
 ### 🔗 Important Verification & Application Links
 
 - 🌐 **Official Bulletin**: [Read Complete Notification, Cut-Off Marks & Apply Online on Sarkari.online](https://sarkari.online/article/odisha-deled-result-2026-sams-ct/)
-- 🏛️ **Authority Portal**: [sarkari.online](https://sarkari.online)
+- 🏛️ **Authority Portal**: [scert.samsodisha.gov.in](https://scert.samsodisha.gov.in)
 - 📚 **Sarkari.online Hub**: [Home](https://sarkari.online/) | [State Govt Jobs 2026](https://sarkari.online/state-jobs/) | [Examination Calculators](https://sarkari.online/tools/)
 
 ---
