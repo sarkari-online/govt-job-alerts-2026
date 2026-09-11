@@ -14,9 +14,9 @@ Maharashtra CET Cell has released the 3-Year LLB CAP Round 2 seat allotment list
 
 | Metric | Specification |
 | :--- | :--- |
-| **Conducting Authority** | Official Statutory Authority |
+| **Conducting Authority** | State Common Entrance Test Cell, Maharashtra |
 | **Announcement Date** | 01 September 2026 |
-| **Official Portal** | [sarkari.online](https://sarkari.online) |
+| **Official Portal** | [llb3cap26.mahacet.org](https://llb3cap26.mahacet.org) |
 | **Complete Notification & Cutoff** | [Check Details on Sarkari.online](https://sarkari.online/article/maharashtra-3-year-llb-round-2-allotment-2026/) |
 
 ---
@@ -24,7 +24,7 @@ Maharashtra CET Cell has released the 3-Year LLB CAP Round 2 seat allotment list
 ### 🔗 Important Verification & Application Links
 
 - 🌐 **Official Bulletin**: [Read Complete Notification, Cut-Off Marks & Apply Online on Sarkari.online](https://sarkari.online/article/maharashtra-3-year-llb-round-2-allotment-2026/)
-- 🏛️ **Authority Portal**: [sarkari.online](https://sarkari.online)
+- 🏛️ **Authority Portal**: [llb3cap26.mahacet.org](https://llb3cap26.mahacet.org)
 - 📚 **Sarkari.online Hub**: [Home](https://sarkari.online/) | [State Govt Jobs 2026](https://sarkari.online/state-jobs/) | [Examination Calculators](https://sarkari.online/tools/)
 
 ---
