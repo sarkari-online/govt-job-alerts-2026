@@ -14,9 +14,9 @@ Navigate the KCET 2026 counselling process with our expert guide on document ver
 
 | Metric | Specification |
 | :--- | :--- |
-| **Conducting Authority** | google_trends |
+| **Conducting Authority** | Karnataka Examinations Authority (KEA) |
 | **Announcement Date** | 23 August 2026 |
-| **Official Portal** | [trends.google.com](https://trends.google.com/trending/rss?geo=IN) |
+| **Official Portal** | [cetonline.karnataka.gov.in](https://cetonline.karnataka.gov.in/kea/) |
 | **Complete Notification & Cutoff** | [Check Details on Sarkari.online](https://sarkari.online/article/kcet-2026-counselling-seat-allotment/) |
 
 ---
@@ -24,7 +24,7 @@ Navigate the KCET 2026 counselling process with our expert guide on document ver
 ### 🔗 Important Verification & Application Links
 
 - 🌐 **Official Bulletin**: [Read Complete Notification, Cut-Off Marks & Apply Online on Sarkari.online](https://sarkari.online/article/kcet-2026-counselling-seat-allotment/)
-- 🏛️ **Authority Portal**: [trends.google.com](https://trends.google.com/trending/rss?geo=IN)
+- 🏛️ **Authority Portal**: [cetonline.karnataka.gov.in](https://cetonline.karnataka.gov.in/kea/)
 - 📚 **Sarkari.online Hub**: [Home](https://sarkari.online/) | [State Govt Jobs 2026](https://sarkari.online/state-jobs/) | [Examination Calculators](https://sarkari.online/tools/)
 
 ---
