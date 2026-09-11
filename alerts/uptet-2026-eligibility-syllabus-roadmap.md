@@ -14,9 +14,9 @@ Master the UPTET 2026 exam with our comprehensive guide covering eligibility cri
 
 | Metric | Specification |
 | :--- | :--- |
-| **Conducting Authority** | Official Statutory Examination Authority |
+| **Conducting Authority** | UP Examination Regulatory Authority |
 | **Announcement Date** | 24 August 2026 |
-| **Official Portal** | [trends.google.com](https://trends.google.com/trending/rss?geo=IN) |
+| **Official Portal** | [updeled.gov.in](https://updeled.gov.in) |
 | **Complete Notification & Cutoff** | [Check Details on Sarkari.online](https://sarkari.online/article/uptet-2026-eligibility-syllabus-roadmap/) |
 
 ---
@@ -24,7 +24,7 @@ Master the UPTET 2026 exam with our comprehensive guide covering eligibility cri
 ### 🔗 Important Verification & Application Links
 
 - 🌐 **Official Bulletin**: [Read Complete Notification, Cut-Off Marks & Apply Online on Sarkari.online](https://sarkari.online/article/uptet-2026-eligibility-syllabus-roadmap/)
-- 🏛️ **Authority Portal**: [trends.google.com](https://trends.google.com/trending/rss?geo=IN)
+- 🏛️ **Authority Portal**: [updeled.gov.in](https://updeled.gov.in)
 - 📚 **Sarkari.online Hub**: [Home](https://sarkari.online/) | [State Govt Jobs 2026](https://sarkari.online/state-jobs/) | [Examination Calculators](https://sarkari.online/tools/)
 
 ---
