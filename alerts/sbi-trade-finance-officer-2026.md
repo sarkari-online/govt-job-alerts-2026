@@ -14,9 +14,9 @@ SBI Trade Finance Officer 2026 registration is live on the official careers port
 
 | Metric | Specification |
 | :--- | :--- |
-| **Conducting Authority** | Official Statutory Authority |
+| **Conducting Authority** | State Bank of India (SBI) |
 | **Announcement Date** | 01 September 2026 |
-| **Official Portal** | [sarkari.online](https://sarkari.online) |
+| **Official Portal** | [sbi.co.in](https://sbi.co.in/web/careers) |
 | **Complete Notification & Cutoff** | [Check Details on Sarkari.online](https://sarkari.online/article/sbi-trade-finance-officer-2026/) |
 
 ---
@@ -24,7 +24,7 @@ SBI Trade Finance Officer 2026 registration is live on the official careers port
 ### 🔗 Important Verification & Application Links
 
 - 🌐 **Official Bulletin**: [Read Complete Notification, Cut-Off Marks & Apply Online on Sarkari.online](https://sarkari.online/article/sbi-trade-finance-officer-2026/)
-- 🏛️ **Authority Portal**: [sarkari.online](https://sarkari.online)
+- 🏛️ **Authority Portal**: [sbi.co.in](https://sbi.co.in/web/careers)
 - 📚 **Sarkari.online Hub**: [Home](https://sarkari.online/) | [State Govt Jobs 2026](https://sarkari.online/state-jobs/) | [Examination Calculators](https://sarkari.online/tools/)
 
 ---
