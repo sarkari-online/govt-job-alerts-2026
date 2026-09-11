@@ -14,9 +14,9 @@ Access your MHT CET 2026 CAP seat allotment status. Learn how to accept your sea
 
 | Metric | Specification |
 | :--- | :--- |
-| **Conducting Authority** | google_trends |
+| **Conducting Authority** | State Common Entrance Test Cell, Maharashtra |
 | **Announcement Date** | 24 August 2026 |
-| **Official Portal** | [trends.google.com](https://trends.google.com/trending/rss?geo=IN) |
+| **Official Portal** | [cetcell.mahacet.org](https://cetcell.mahacet.org) |
 | **Complete Notification & Cutoff** | [Check Details on Sarkari.online](https://sarkari.online/article/mht-cet-2026-cap-counselling-results/) |
 
 ---
@@ -24,7 +24,7 @@ Access your MHT CET 2026 CAP seat allotment status. Learn how to accept your sea
 ### 🔗 Important Verification & Application Links
 
 - 🌐 **Official Bulletin**: [Read Complete Notification, Cut-Off Marks & Apply Online on Sarkari.online](https://sarkari.online/article/mht-cet-2026-cap-counselling-results/)
-- 🏛️ **Authority Portal**: [trends.google.com](https://trends.google.com/trending/rss?geo=IN)
+- 🏛️ **Authority Portal**: [cetcell.mahacet.org](https://cetcell.mahacet.org)
 - 📚 **Sarkari.online Hub**: [Home](https://sarkari.online/) | [State Govt Jobs 2026](https://sarkari.online/state-jobs/) | [Examination Calculators](https://sarkari.online/tools/)
 
 ---
