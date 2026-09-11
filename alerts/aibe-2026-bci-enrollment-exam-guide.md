@@ -14,9 +14,9 @@ Get a complete guide to AIBE 2026. Understand BCI enrollment steps, mandatory do
 
 | Metric | Specification |
 | :--- | :--- |
-| **Conducting Authority** | Official Statutory Examination Authority |
+| **Conducting Authority** | Bar Council of India (AIBE) |
 | **Announcement Date** | 25 August 2026 |
-| **Official Portal** | [trends.google.com](https://trends.google.com/trending/rss?geo=IN) |
+| **Official Portal** | [allindiabarexamination.com](https://allindiabarexamination.com) |
 | **Complete Notification & Cutoff** | [Check Details on Sarkari.online](https://sarkari.online/article/aibe-2026-bci-enrollment-exam-guide/) |
 
 ---
@@ -24,7 +24,7 @@ Get a complete guide to AIBE 2026. Understand BCI enrollment steps, mandatory do
 ### 🔗 Important Verification & Application Links
 
 - 🌐 **Official Bulletin**: [Read Complete Notification, Cut-Off Marks & Apply Online on Sarkari.online](https://sarkari.online/article/aibe-2026-bci-enrollment-exam-guide/)
-- 🏛️ **Authority Portal**: [trends.google.com](https://trends.google.com/trending/rss?geo=IN)
+- 🏛️ **Authority Portal**: [allindiabarexamination.com](https://allindiabarexamination.com)
 - 📚 **Sarkari.online Hub**: [Home](https://sarkari.online/) | [State Govt Jobs 2026](https://sarkari.online/state-jobs/) | [Examination Calculators](https://sarkari.online/tools/)
 
 ---
